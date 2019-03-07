@@ -147,7 +147,7 @@ if [ "${MODE}" = "debug" ] || [ "${MODE}" = "debug-suspend" ]; then
 	VMARG_LIST+=" -Xnoagent" 
 	VMARG_LIST+=" -Djava.compiler=NONE" 
 	VMARG_LIST+=" -Dlog4j.configuration=\"${DEBUG_LOG4J}\""  
-	VMARG_LIST+=" -Xrunjdwp:transport=dt_socket,server=y,suspend=${SUSPEND},address=*:${DEBUG_PORT}"
+	VMARG_LIST+=" -Xrunjdwp:transport=dt_socket,server=y,suspend=${SUSPEND},address=127.0.0.1:${DEBUG_PORT}"
 	VMARG_LIST+=" -Dcom.sun.management.jmxremote.port=$(($DEBUG_PORT+1))"
 	VMARG_LIST+=" -Dcom.sun.management.jmxremote.authenticate=false"
 	VMARG_LIST+=" -Dcom.sun.management.jmxremote.ssl=false"

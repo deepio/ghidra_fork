@@ -137,7 +137,7 @@ if "%DEBUG%"=="y" (
 	)
 	set /a JMX_PORT=!DEBUG_PORT!+1
 	set VMARG_LIST=!VMARG_LIST! -Xdebug -Xnoagent -Djava.compiler=NONE -Dlog4j.configuration="!DEBUG_LOG4J!"
-	set VMARG_LIST=!VMARG_LIST! -Xrunjdwp:transport=dt_socket,server=y,suspend=!SUSPEND!,address=*:!DEBUG_PORT!
+	set VMARG_LIST=!VMARG_LIST! -Xrunjdwp:transport=dt_socket,server=y,suspend=!SUSPEND!,address=127.0.0.1:!DEBUG_PORT!
 	set VMARG_LIST=!VMARG_LIST! -Dcom.sun.management.jmxremote.port=!JMX_PORT!
 	set VMARG_LIST=!VMARG_LIST! -Dcom.sun.management.jmxremote.authenticate=false
 	set VMARG_LIST=!VMARG_LIST! -Dcom.sun.management.jmxremote.ssl=false
