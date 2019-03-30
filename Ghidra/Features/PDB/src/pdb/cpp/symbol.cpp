@@ -164,9 +164,7 @@ static wchar_t* BASIC_TYPE_STRINGS [] = {
 		L"<complex>",
 		L"<bit>",
 		L"BSTR",
-		L"HRESULT",
-		L"char16_t",
-		L"char32_t"
+		L"HRESULT"
 };
 
 BSTR getName(IDiaSymbol * pSymbol) {

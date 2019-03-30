@@ -6,11 +6,7 @@ in the licenses directory in the installation root directory.
 The 3rd party files in this module are as follows:
 
 
-Creative Commons Attribution 2.5:
-
-	src/main/help/help/topics/DecompilePlugin/images/page_edit.png
-
-LGPL 3.0:
+Oxygen Icons - LGPL 3.0:
 
 	src/main/help/help/shared/warning.png
 	src/main/help/help/shared/note.png
@@ -18,7 +14,11 @@ LGPL 3.0:
 	src/main/help/help/shared/note-red.png
 	src/main/help/help/shared/note.yellow.png
 
-Public Domain:
+FAMFAMFAM Icons - CC 2.5:
+
+	src/main/help/help/topics/DecompilePlugin/images/page_edit.png
+
+Tango Icons - Public Domain:
 
 	src/main/help/help/topics/DecompilePlugin/images/camera-photo.png
 

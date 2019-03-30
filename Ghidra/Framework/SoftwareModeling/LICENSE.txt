@@ -8,13 +8,14 @@ The 3rd party files in this module are as follows:
 
 BSD:
 
-	lib/relaxngDatatype.jar
-	lib/isorelax.jar
-	lib/xsdlib.jar
-	lib/antlr-3.5.2-complete.jar
-	lib/msv.jar
+	lib/msv-20050913.jar
+	lib/isorelax-20050913.jar
+	lib/relaxngDatatype-20050913.jar
+	lib/xsdlib-20050913.jar
+	lib/antlr-runtime-3.5.2.jar
+	lib/antlr-3.5.2.jar
 
-Public Domain:
+Tango Icons - Public Domain:
 
 	src/main/resources/images/audio-volume-medium.png
 

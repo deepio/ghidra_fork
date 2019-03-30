@@ -6,17 +6,7 @@ in the licenses directory in the installation root directory.
 The 3rd party files in this module are as follows:
 
 
-Apache License 2.0:
-
-	os/linux64/libjpam.so
-
 LGPL 2.1:
 
-	os/win64/NTSystem.dll
-	os/win32/NTSystem.dll
 	data/jaas-modules-src-1.0.3.zip
-
-Public Domain:
-
-	lib/tagishauth.jar
 

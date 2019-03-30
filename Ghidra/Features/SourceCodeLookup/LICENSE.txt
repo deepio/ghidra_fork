@@ -6,7 +6,7 @@ in the licenses directory in the installation root directory.
 The 3rd party files in this module are as follows:
 
 
-LGPL 3.0:
+Oxygen Icons - LGPL 3.0:
 
 	src/main/help/help/shared/warning.png
 	src/main/help/help/shared/note.png

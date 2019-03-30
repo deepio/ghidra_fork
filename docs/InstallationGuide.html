@@ -18,7 +18,7 @@
 
 <h1>Ghidra Installation Guide</h1>
 <p>
-The installation information provided is effective as of Ghidra 9.0 and is subject to change with
+The installation information provided is effective as of Ghidra 9.0.1 and is subject to change with
 future releases.
 </p>
 
@@ -467,14 +467,17 @@ be installed in a pre-existing Eclipse installation.</p>
     </ul>
   </li>
   <li>
-    <b><font color="red">Problem: </font></b><i>Exited with error.  Run in debug mode for more
-    details.</i>
+    <b><font color="red">Problem: </font></b><i>Exited with error.  Run in foreground (fg) mode for 
+    more details.</i>
     <ul>
       <li>
         <p><b><font color="green">Solution: </font></b>Ghidra failed to launch in the background and
-        the error message describing the cause of the failure is being suppressed.  Rerun Ghidra
-        using the <i>&lt;GhidraInstallDir&gt;</i>/support/ghidraDebug script to see the error
-        message.</p>
+        the error message describing the cause of the failure is being suppressed.  Rerun Ghidra in
+        the foreground by setting the LAUNCH_MODE variable in the launch script you ran to 
+        <b>fg</b>. Alternatively, you can use the 
+        <i>&lt;GhidraInstallDir&gt;</i>/support/ghidraDebug script to run Ghidra in debug mode, 
+        which will also allow you to see the error message as well as additional debug output.  
+        <b>NOTE:</b> By default, running Ghidra in debug mode listens on 127.0.0.1:18001.</p>
       </li>
     </ul>
   </li>
@@ -541,9 +544,6 @@ be installed in a pre-existing Eclipse installation.</p>
 </ul>
 <h3><a name="LinuxIssues"></a>Linux</h3>
 <ul>
-  <li>
-    Ghidra Server does not support PAM-based user authentication (-a1 authentication mode).
-  </li>
   <li>
     Some users have reported Ghidra GUI rendering issues on 4k displays and multi-monitor thin 
     client setups.  These problems are attributed to reported bugs in Java.  Upgrading to a newer
